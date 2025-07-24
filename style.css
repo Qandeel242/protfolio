@@ -1,36 +1,23 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #0d1b2a;
-}
-
-#landing img {
-  width: 100%;
-  display: block;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 #about {
-  padding: 50px 0;
-  background-color: #1b263b;
-  text-align: center;
   opacity: 0;
   transform: translateY(30px);
   transition: all 1s ease;
 }
 
-#about img {
-  width: 80%;
-  max-width: 900px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
-
 #about.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+#about img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
