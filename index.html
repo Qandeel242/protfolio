@@ -13,5 +13,18 @@
     <img src="images/landing-page.png" alt="Landing Page" />
   </section>
 
+<section id="about">
+  <img src="images/about-section.png" alt="About Me" />
+</section>
+<script>
+  window.addEventListener("scroll", () => {
+    const about = document.getElementById("about");
+    const rect = about.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      about.classList.add("visible");
+    }
+  });
+</script>
+
 </body>
 </html>
